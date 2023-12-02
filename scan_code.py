@@ -17,7 +17,7 @@ def scan_codes():
 
 #Envia el Código obtenido por Metodo POST 
 def enviar_codigo(codigo):
-    url = "http://127.0.0.1:8000/api/leercodigo/" #URL API
+    url = "http://127.0.0.1:8000/api/leer-codigo/" #URL API
     codigo_sin_ultimo_digito = codigo[:-1] # Le quita el ultimo numero
     codigo_con_cero = "0" + codigo_sin_ultimo_digito # Le agrega un 0 al principio
     data = {"codigo": codigo_con_cero}
